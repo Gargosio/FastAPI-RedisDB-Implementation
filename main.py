@@ -5,7 +5,7 @@ Created on Tue Apr 12 20:44:59 2022
 @author: TEVIN
 """
 import uvicorn   #####comment when deployed
-from fastapi import Depends, FastAPI, HTTPException, status
+rom fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 import secrets
 from redis_om import get_redis_connection, HashModel
@@ -54,8 +54,8 @@ def format(pk: str):
         'time': sensordata.time,
         'Humidity': sensordata.Humidity, 
         'Temperature': sensordata.Temperature
-        
-       
+
+
     }
 
 @app.post('/postsensordata')
