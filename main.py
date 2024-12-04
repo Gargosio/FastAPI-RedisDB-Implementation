@@ -25,7 +25,7 @@ def get_current_username(credentials: HTTPBasicCredentials = Depends(security)):
     return credentials.username
 
 redis = get_redis_connection(
-    host  = "redis-15365.c277.us-east-1-3.ec2.cloud.redislabs.com",
+    host  = *********************************************,
     port=15365,
     password="ruqK6OVaQpYajpp1glVruZYZdTHQfMlq",
     decode_responses=True
